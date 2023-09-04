@@ -75,8 +75,6 @@ public class Student {
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} finally {
-			connection.close();
-			preparedStatement.close();
 			System.out.println("Do you want to Login ('y' -> to go to login page / 'n' -> to go back to Main menu) >> ");
 			String op=scanner.next();
 			if(op.charAt(0)=='y' || op.charAt(0)=='Y') {
